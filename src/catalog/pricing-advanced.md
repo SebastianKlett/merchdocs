@@ -65,7 +65,7 @@ Advanced pricing data is synchronized with product pages{% if "Default.B2B Only"
 <p class="tableBody">Customer Group</p><!--{% endif %}-->
 <!--{% if "Default.B2B Only" contains site.edition %}-->
 <p class="tableBody">Group or Catalog</p><!--{% endif %}-->
-</td><td>(Required) Identifies the customer group {% if "Default.B2B Only" contains site.edition %}or shared catalog {% endif %}that qualifies to receive the discount price. When a value in a group or catalog field is changed, the corresponding custom price row  that matched the previous setting is deleted from the shared catalog Options:<table>
+</td><td>(Required) Identifies the customer group {% if "Default.B2B Only" contains site.edition %}or shared catalog {% endif %}that qualifies to receive the discount price. When a value in a group or catalog field is changed, the corresponding custom price row  that matched the previous setting is deleted from the shared catalog. Options:<table>
 <col WIDTH="150">
 <col WIDTH="auto"><tbody markdown="1"><tr><td>ALL GROUPS</td><td>Applies the rule to all customer groups. {% if "Default.B2B Only" contains site.edition %}The value is not applied to the shared catalog, and changes in advanced pricing data are not synchronized with the shared catalog.{% endif %}</td></tr><tr><td>NOT LOGGED IN</td><td colspan="2">Applies the rule guests and customers who are not logged in to their accounts.</td></tr><!--{% if "Default.B2B Only" contains site.edition %}-->
 <tr><td colspan="2">Shared Catalogs</td></tr><!--{% endif %}-->
